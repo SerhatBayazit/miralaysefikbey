@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        i {
+            margin-right: 10px;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 55px;
+            margin-bottom: 50px;
+            display: inline-block;
+            background-color: #7e7e7e;
+            margin-top: -5px;
+
+        }
+
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            line-height: 50px;
+
+        }
+
+        .navbar ul li {
+            list-style-type: none;
+            display: inline-block;
+            background-color: #7e7e7e;
+            margin-left: -30px;
+            margin-right: 60px;
+            width: 200px;
+            text-align: center;
+            height: 50px;
+            margin-top: -11px;
+
+        }
+
+        .navbar ul li:hover {
+            background-color: #565656;
+            transition: 1s;
+        }
+
+        .solpanel {
+            width: 75%;
+            height: 500px;
+            border: 1px solid black;
+            display: inline-block;
+            margin-left: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .sagpanel {
+            width: 20%;
+            height: 500px;
+            border: 1px solid black;
+            display: inline-block;
+            margin-right: 20px;
+            float: right;
+            background-color: rgb(255, 247, 236);
+        }
+
+        .kişilistesi {
+            width: 80%;
+            height: 100px;
+            margin: 20px;
+        }
+
+        .sagpanel ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .kullanıcılar {
+            width: 80%;
+            float: right;
+            display: inline-block;
+        }
+
+        .sagpanel .kullanıcılar ul li {
+            list-style-type: none;
+            margin-bottom: 43px;
+            display: inline-block;
+        }
+
+        .resimler {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            display: block;
+            margin-top: 17px;
+            margin-left: 25px;
+        }
+
+        .arkaplan {
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .kişidivi{
+            display:none;
+            z-index: 1;
+            position: absolute;
+        }
+        .kişidivi ul{
+            margin-top: 60px;
+            margin-left: -169px;
+        }
+        .kişidivi ul li{
+            height: 60px;
+        }
+        .kişilistesi:hover .kişidivi{
+            display: inline-block;
+        }
+        .olaydivi{
+            position: absolute;
+            z-index: 11;
+            display: none;
+            margin-top: 60px;
+            margin-left: -201px;
+        }
+        .olaylar:hover .olaydivi{
+            display: inline-block;
+        }
+        .olaydivi ul li{
+            height: 70px;
+            width: 250px;
+        }
+        .olaydivi ul li a{
+            font-size: 20px;
+            text-align: center;
+            line-height: 60px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="/WebSitem/Kişimenusu.html"><i class="fa-solid fa-house"></i>Anasayfa</a></li>
+            <li class="kişilistesi"><a href="">Kişi Listesi</a>
+                <div class="kişidivi">
+                    <ul>
+                        <li style="display: block;"><a href="/WebSitem/serhatbayazıt.html">Serhat Bayazıt</a></li>
+                        <li style="display: block;"><a href="">Hamza Güneş</a></li>
+                        <li style="display: block;"><a href="">Ferhat Köknar</a></li>
+                        <li style="display: block;"><a href="">Türker Kılıç</a></li>
+                        <li style="display: block;"><a href="">Eray Özdemir</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="olaylar"><a href="">Yaşanan Olaylar</a>
+                <div class="olaydivi">
+                    
+                    <ul><li style="display: block;"><a href="">İlk Toplantı</a></li>
+                        <li style="display: block;"><a href="">Asos Gezisi ve Mangal</a></li>
+                        <li style="display: block;"><a href="">Kısır Olayı</a></li>
+                        <li style="display: block;"><a href="">Mortal Kombatın Keşfi</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li style="float: right ;margin-right: 20px;"><a href="">İletişim</a></li>
+        </ul>
+    </div>
+
+    <div class="solpanel">
+        <h2 style="text-align: center;"> Mahalemize ve O Mistik Eve Hoşgeldiniz</h2>
+        <h3 style="margin: 50px;">Öncelikle bu sitede birbirimizle bağlantılarımız, genel olarak ne yaşadığımız, hangi
+            olayların başımızdan geçtiği, hangi zamanlarda gülüp, hangi zamanlarda sıkıntılı olaylar yaşadık biraz
+            bunlara değinicem.</h3>
+
+    </div>
+
+    <div class="sagpanel">
+        <h2 style="text-align: center;">Miralay Şefik Bey Kullanıcı Listesi</h2>
+        <div class="kullanıcılar">
+            <ul>
+
+                <li><a href="/WebSitem/serhatbayazıt.html">Serhat Bayazıt</a></li>
+                <li><a href="">Hamza Güneş</a></li>
+                <li><a href="">Ferhat Köknar</a></li>
+                <li><a href="">Türker Kılıç</a></li>
+                <li><a href="">Eray Özdemir</a></li>
+            </ul>
+        </div>
+        <a href="/WebSitem/serhatbayazıt.html"><div class="resimler"style="background-image: url(/res/serhat.jpeg); background-position: absolute; background-size:cover ;""></div></a>
+        <a href=""><div class=" resimler"style="background-image: url(/res/hamza.png); background-position: absolute; background-size:cover ;"></div></a> 
+        <a href=""><div class="resimler" style="background-image: url(/res/fero.png); background-position: absolute; background-size:cover ;"></div></a>
+        <a href=""><div class="resimler" style="background-image: url(/res/türker.png); background-position: absolute; background-size:cover ;"></div></a>
+        <a href="">
+            <div class="resimler" style="background-image: url(/res/eray.jpeg); background-position: absolute; background-size:cover ;"></div></a></div>
+    <img class="arkaplan" src="/res/2024-08-05 (1).png" width="100%" height="831px"
+        style="background: rgba(0, 0, 0 ,0.5,);">
+
+</body>
+
+</html>
